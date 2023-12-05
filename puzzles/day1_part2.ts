@@ -1,6 +1,4 @@
-import { readFile } from 'node:fs/promises';
-
-const input = await readFile('inputs/day1', 'utf-8');
+import { inputLines } from './utils';
 
 const DIGITS: {[k: string]: string} = {
   'one': '1',
@@ -23,7 +21,7 @@ const DIGITS: {[k: string]: string} = {
   '9': '9',
 };
 
-const answer = input.split('\n').slice(0, -1)
+const answer = (await inputLines(1))
   .map((line) => {
     const [first] = Object.keys(DIGITS)
       .map<[string, number]>((d) => [d, line.indexOf(d)])

@@ -15,5 +15,5 @@ yarn install
 Run daily puzzle
 
 ```bash
-yarn ts-node --esm puzzles/day{}_part{}.ts
+yarn ts-node puzzles/day{}_part{}.ts
 ```

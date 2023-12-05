@@ -1,10 +1,8 @@
-import { readFile } from 'node:fs/promises';
-
-const input = await readFile('inputs/day1', 'utf-8');
+import { inputLines } from './utils';
 
 const isNum = (char: string) => !Number.isNaN(parseInt(char));
 
-const answer = input.split('\n').slice(0, -1)
+const answer = (await inputLines(1))
   .map((line) => {
     const chars = line.split('');
 
