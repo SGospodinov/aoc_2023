@@ -1,0 +1,12 @@
+{
+  "name": "aoc_2023",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
