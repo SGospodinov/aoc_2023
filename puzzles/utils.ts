@@ -7,3 +7,9 @@ export const inputLines = async (day: number) => {
 
   return rawFile.trim().split(NEW_LINE);
 };
+
+export const inputString = async (day: number) => {
+  const rawFile = await readFile(`inputs/day${day}`, 'utf-8');
+
+  return rawFile.trim();
+};

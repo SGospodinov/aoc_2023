@@ -17,3 +17,7 @@ Run daily puzzle
 ```bash
 yarn ts-node puzzles/day{}_part{}.ts
 ```
+
+## Notes
+
+- Day 5, part 2 is works but it's quite slow, consider optimising
